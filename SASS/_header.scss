@@ -1,0 +1,98 @@
+header {
+   display: flex;
+   margin: 0 auto;
+   flex-direction: column;
+   height: 100vh;
+   max-width: 1480px;
+   overflow: hidden;
+   font-family: 'raleway', sans-serif;
+}
+
+.aboutMe {
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-basis: 100%;
+   margin: 10px;
+   background-image: url("/IMG/author__IMG_1335.jpg");
+   background-position: top 0 left 60%;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.aboutMe__introduction {
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-top: 20px;
+   padding: 20px;
+   background-color: rgba(255, 255, 255, 0.912);
+   transition: 0.7s;
+
+   @include mq(xxsmall) {
+      width: 50%;
+      height: 100%;
+      margin-top: 0;
+   }
+
+   // @include mq(small) {
+   //    width: 50%;
+   //    height: 100%;
+   //    margin-top: 0;
+   // }
+
+}
+
+.aboutMe__introduction:hover {
+   cursor: pointer;
+   background-color: rgb(255, 255, 255);
+}
+
+.aboutMe__introduction h1 {
+   font-size: 5em;
+   font-weight: 400;
+   text-align: right;
+   border-bottom: 2px solid black;
+   margin-bottom: 20px;
+   padding-right: 10px;
+   letter-spacing: 2px;
+
+   @include mq(xsmall) {
+      font-size: 5.5em;
+   }
+
+   @include mq(small) {
+      font-size: 6.5em;
+      margin-bottom: 30px;
+   }
+
+   @include mq(medium) {
+      margin-bottom: 40px;
+   }
+
+}
+
+.aboutMe__introduction p {
+   padding: 5px;
+   font-size: 1.3em;
+   line-height: 1.4em;
+   font-weight: 400;
+   text-align: left;
+
+   @include mq(xsmall) {
+      font-size: 1.5em;
+      line-height: 1.4em;
+   }
+
+   @include mq(small) {
+      font-size: 1.6em;
+   }
+
+   @include mq(small) {
+      font-size: 1.7em;
+   }
+
+}

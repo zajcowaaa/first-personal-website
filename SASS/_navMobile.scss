@@ -1,0 +1,76 @@
+.navFixed {
+   position: fixed;
+   top: 0;
+   left: 100%;
+   transform: translateX(0%);
+   width: 250px;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   transition: 0.2s linear;
+
+   &--show {
+      transform: translate(-100%);
+   }
+
+   &__ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 75px;
+   }
+
+   &__item {
+      list-style-type: none;
+      margin-bottom: 20px;
+   }
+
+   &__link {
+      display: block;
+      width: 200px;
+      text-align: center;
+      font-size: 12px;
+      color: #fff;
+      font-family: raleway;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 7px;
+      line-height: 18px;
+      text-decoration: none;
+      padding: 5px 10px;
+      transition: 0.3s;
+   }
+
+   &__link:hover {
+      color: rgb(232, 232, 232);
+      letter-spacing: 6px;
+   }
+
+   &__close {
+      width: 40px;
+      height: 40px;
+
+      position: relative;
+      cursor: pointer;
+
+      &>div {
+         width: 40px;
+         height: 2px;
+         background-color: #fff;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+      }
+   }
+}
+
+.navFixed__closeBarOne {
+   transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.navFixed__closeBarTwo {
+   transform: translate(-50%, -50%) rotate(-45deg);
+}

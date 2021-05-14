@@ -1,0 +1,20 @@
+$breakpoints: (xxsmall: (min-width:400px),
+   xsmall: (min-width:576px),
+   small: (min-width:768px),
+   medium: (min-width:992px),
+   large: (min-width:1200px),
+   xlarge: (min-width:1440px),
+   xxlarge: (min-width:1700px),
+);
+
+@mixin mq($breakpoint) {
+   $size: map-get($breakpoints, $breakpoint);
+
+   @if($size) {
+      @media #{$size} {
+         @content
+      }
+   }
+}
+
+;

@@ -1,0 +1,188 @@
+.design {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   min-height: 100vh;
+   margin: 0 auto;
+}
+
+.design__title {
+   font-size: 5rem;
+   font-weight: 400;
+   border-bottom: 2px solid #000;
+   padding-bottom: 5px;
+   margin-top: 10px;
+   text-align: center;
+   border-bottom: 2px solid black;
+}
+
+.design__image {
+   background-image: url("/IMG/office-932926_1920.jpg");
+   flex-basis: 40vh;
+   background-repeat: no-repeat;
+   background-position: top 40% left 60%;
+   background-size: cover;
+}
+
+.design__txtSection {
+   display: flex;
+   flex-direction: column;
+   max-width: 1480px;
+   margin: 0 auto;
+}
+
+.design__text {
+   margin: 50px 0;
+   padding: 20px 10px;
+   box-sizing: border-box;
+   font-size: 1.3rem;
+   line-height: 1.5rem;
+   text-align: center;
+   background-color: rgb(248, 211, 211);
+
+   @include mq(small) {
+      margin: 40px 270px 30px 50px;
+      padding: 30px;
+      font-size: 1.4em;
+      font-weight: 400;
+      text-align: justify;
+   }
+
+   @include mq(large) {
+      font-size: 1.5rem;
+      line-height: 1.6rem;
+   }
+
+   @include mq(xlarge) {
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+   }
+
+   @include mq(xxlarge) {
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+   }
+}
+
+
+.design__quote {
+   margin-top: 15px;
+   font-size: 1.3em;
+   font-weight: bolder;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   line-height: 1.7rem;
+
+   @include mq(xsmall) {
+      padding-right: 80px;
+      text-align: right;
+   }
+
+}
+
+.design__quoteAuthor {
+   margin-top: 20px;
+   padding: 0 30px;
+   font-size: 0.8em;
+   font-weight: 200px;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   line-height: 1.7rem;
+
+   @include mq(xsmall) {
+      padding-right: 80px;
+      text-align: right;
+      font-size: 0.9rem;
+   }
+
+   @include mq(large) {
+      font-size: 1rem;
+      letter-spacing: 5px
+   }
+
+   @include mq(xlarge) {}
+}
+
+.design__minimalism {
+   position: relative;
+   margin: 20px auto;
+   display: flex;
+   flex-direction: column;
+   padding: 0 20px;
+   width: 50vw;
+   background-color: rgb(248, 211, 211);
+
+   @include mq(xsmall) {
+      flex-direction: row;
+      margin: 40px 50px;
+      width: 55vw;
+   }
+
+   @include mq(small) {
+      width: 300px;
+   }
+
+}
+
+.design__minimalism img {
+   width: 120px;
+}
+
+.design__minimalism__Quote {
+   font-size: 1.1em;
+   font-weight: bolder;
+   text-align: right;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   line-height: 1.7rem;
+
+
+   @include mq(xsmall) {
+      padding: 15px 50px;
+      font-size: 1.1em;
+      font-weight: bolder;
+      text-align: justify;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+   }
+
+   @include mq(small) {
+      padding-left: 25px;
+      width: 30vw;
+   }
+
+   @include mq(large) {
+      font-size: 1.2rem;
+   }
+}
+
+.design__minimalism__QuoteAuthor {
+   margin: 20px 0;
+   font-size: 0.8em;
+   font-weight: 100px;
+   text-align: left;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   line-height: 1.5rem;
+
+   @include mq(xsmall) {
+      margin-top: 5px;
+      margin-left: -20px;
+      ;
+   }
+
+   @include mq(small) {
+      margin-left: 0px;
+   }
+
+   @include mq(large) {
+      font-size: 1rem;
+   }
+
+   @include mq(xlarge) {
+      font-size: 0.9rem;
+      letter-spacing: 6px
+   }
+}

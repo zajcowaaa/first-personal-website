@@ -1,0 +1,145 @@
+.lifestyle {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lifestyle h1 {
+    margin: 0 10px 10px 10px;
+    padding: 0 20px;
+    font-size: 5rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 5px;
+    border-bottom: 2px solid black;
+
+    @include mq(small) {
+        width: 50%;
+        height: 100%;
+        margin-top: 0;
+    }
+}
+
+.lifestyle__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee5e5;
+    margin-bottom: 20px;
+
+
+    @include mq(xsmall) {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    @include mq(large) {
+        height: 60vh;
+        margin: 0 0 20px 0;
+        padding: 60px;
+    }
+}
+
+.lifestyle__wrapper img {
+    width: 70px;
+
+    @include mq(small) {
+        width: 80px;
+    }
+
+    @include mq(medium) {
+        width: 80px;
+    }
+
+}
+
+.lifestyle p {
+    position: relative;
+    margin: 40px 0;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    transition: 0.1s linear;
+
+    @include mq(xsmall) {
+        margin: 20px 20px;
+        font-size: 1.3em
+    }
+
+    @include mq(small) {
+        margin: 20px 20px;
+        padding: 30px 50px;
+    }
+
+    @include mq(medium) {
+        font-size: 1.4rem;
+        line-height: 1.4em;
+        margin: 20px 50px;
+        padding: 40px 30px;
+    }
+
+    @include mq(large) {
+        width: 450px;
+        text-align: center;
+        line-height: 1.5em;
+    }
+}
+
+.lifestyle__firstLine p {
+    padding: 20px 20px;
+
+    @include mq(xsmall) {
+        width: 250px;
+        margin: 20px 30px;
+    }
+
+    @include mq(small) {
+        margin: 20px 50px;
+        padding: 20px 50px;
+    }
+
+
+    @include mq(medium) {
+        margin: 20px 130px;
+        padding: 30px 30px;
+    }
+
+    @include mq(large) {
+        width: 350px;
+        margin: 20px 110px;
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 1.5em;
+    }
+
+}
+
+.lifestyle__firstLine,
+.lifestyle__secondLine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+
+    @include mq(xsmall) {
+        flex-direction: row;
+        padding: 5px 20px;
+    }
+
+    @include mq(small) {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    @include mq(large) {}
+}

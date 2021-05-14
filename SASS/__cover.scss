@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.cover {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/IMG/header__IMG_1353.jpg);
+    background-size: 300%;
+    background-position: top 25% left 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    @include mq(xsmall) {
+        background-size: cover;
+        background-position: top 50% left 50%;
+    }
+
+    @include mq(small) {
+        background-size: cover;
+        background-position: top 45% left 50%;
+    }
+
+    // @include mq(medium) {
+    //    background-position: top 45% left 50%;
+    // }
+
+    // @include mq(large) {
+    //    background-position: top 25% left 50%;
+    // }
+
+    // @include mq(xlarge) {
+    //    background-position: top 10% left 50%;
+    // }
+
+    // @include mq(xxlarge) {
+    //    background-position: top 35% left 50%;
+    // }
+
+
+
+
+    .coverNavigation {
+        display: none;
+        overflow: hidden;
+        width: 100%;
+        color: rgba(255, 255, 255, 0.849);
+
+        @include mq(medium) {
+            display: block;
+        }
+    }
+
+    .coverNavigation ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 10vh;
+        transition: 0.4s;
+    }
+
+    .coverNavigation li {
+        list-style: none;
+
+    }
+
+    .coverNavigation a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 1em;
+        font-family: raleway;
+        text-transform: uppercase;
+        letter-spacing: 7px;
+        color: rgba(255, 255, 255, 0.849);
+        transition: 0.4s ease;
+
+        @include mq(medium) {
+            width: 100px;
+            line-height: 1.7rem;
+            text-align: center;
+        }
+
+        @include mq(large) {
+            width: 200px;
+        }
+
+        @include mq(large) {
+            font-size: 1.1rem;
+        }
+
+        @include mq(large) {
+            font-size: 1.2rem;
+        }
+    }
+
+    .coverNavigation ul:hover {
+        background-color: rgba(255, 255, 255, 0.856);
+    }
+
+    .coverNavigation ul:hover a {
+        color: rgb(85, 85, 85);
+        font-weight: bold;
+    }
+
+    .navDesktop__link:hover {
+        letter-spacing: 8px;
+        color: black;
+    }
+
+    .cover__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cover__logo img {
+        width: 105px;
+
+        @include mq(xxsmall) {
+            width: 110px;
+        }
+
+        @include mq(xsmall) {
+            width: 125px;
+        }
+
+        @include mq(small) {
+            width: 140px;
+        }
+
+        @include mq(xlarge) {
+            width: 150px;
+        }
+
+    }
+
+    .cover__author {
+        white-space: nowrap;
+        margin-top: 15px;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        font-family: 'Special Elite', cursive, sans-serif;
+        // font-family: 'Special Elite', cursive;
+        letter-spacing: 3.5px;
+        color: #000;
+
+        @include mq(xxsmall) {
+            font-size: 1.7rem;
+        }
+
+        @include mq(xsmall) {
+            font-size: 1.8rem;
+        }
+
+        // @include mq(large) {
+        //    font-size: 2rem;
+        // }
+
+        // @include mq(xlarge) {
+        //    font-size: 2.7rem;
+        // }
+
+    }
+}

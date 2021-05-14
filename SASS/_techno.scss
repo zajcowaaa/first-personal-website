@@ -1,0 +1,198 @@
+.techno {
+   display: flex;
+   flex-direction: column;
+
+   &__title {
+      font-size: 5rem;
+      font-weight: 400;
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+      margin-top: 10px;
+      text-align: center;
+      // width: 100%;
+   }
+
+   &__bgFirst {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 750px;
+      background-image: url("/IMG/home-office-5112696_1920.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding: 25px 0px;
+
+      @include mq(small) {
+         min-height: 1000px;
+      }
+   }
+
+   &__more {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      width: 310px;
+      height: 330px;
+      padding: 15px;
+
+      @include mq(xsmall) {
+         width: 550px;
+         height: 500px;
+         padding: 35px;
+      }
+   }
+
+
+   &__text {
+      min-width: 250px;
+      text-align: center;
+      margin-bottom: 7.5px;
+      font-size: 1.3rem;
+      line-height: 15px;
+
+      @include mq(xsmall) {
+         margin-bottom: 15px;
+         font-size: 1.5rem;
+         line-height: 25px;
+      }
+   }
+
+   &__btnMore {
+      box-sizing: content-box;
+      background-color: #fff;
+      border-bottom: 1px solid #000;
+      padding: 5px 5px;
+      font-size: 1.3rem;
+      cursor: pointer;
+      color: black;
+      transition: 0.3s ease-in;
+      width: 80px;
+      height: 30px;
+      text-decoration: none;
+      text-align: center;
+
+      @include mq(xsmall) {
+         font-size: 1.6rem;
+         padding-bottom: 6px;
+         margin-top: 30px;
+      }
+   }
+
+   &__btnMore:hover {
+      padding-right: 10px;
+      padding-left: 10px;
+
+      @include mq(xsmall) {
+         padding-right: 20px;
+         padding-left: 20px;
+      }
+   }
+
+
+   &__bgSecond {
+      min-height: 500px;
+      background-image: url("/IMG/baner__IMG_1347.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+   }
+
+
+   &__rules {
+      display: flex;
+      flex-direction: column;
+      padding: 50px 10px 25px;
+   }
+
+   &__rulesWrap {
+      width: 100%;
+      max-width: 1600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      padding: 50px 10px;
+      margin: 0 auto;
+
+      @include mq(large) {
+         flex-direction: row;
+      }
+   }
+
+   &__rulesHeaderTitle {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      font-size: 2rem;
+      max-width: 800px;
+
+      &>strong {
+         font-weight: 500;
+         border-bottom: 1px solid #000;
+      }
+
+   }
+
+
+   &__singleRule {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+      height: 300px;
+
+      @include mq(large) {
+         margin: 0;
+         height: 350px;
+         width: 350px;
+      }
+
+   }
+
+   &__ruleImg {
+      width: 100px;
+   }
+
+   &__ruleTitle {
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 15px 0px;
+      border-bottom: 1px solid #000;
+      padding-bottom: 6px;
+
+      @include mq(large) {
+         padding-bottom: 10px;
+      }
+   }
+
+   &__ruleText {
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      max-width: 400px;
+
+      @include mq(xsmall) {
+         font-size: 1.3rem
+      }
+
+      @include mq(small) {
+         padding-top: 10px;
+         font-size: 1.4rem
+      }
+
+      @include mq(large) {
+         font-size: 1.4rem;
+         line-height: 2rem;
+      }
+
+      @include mq(large) {
+         font-size: 1.4rem;
+
+      }
+   }
+}

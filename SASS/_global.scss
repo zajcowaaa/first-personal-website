@@ -1,0 +1,66 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   border: 0;
+   font-family: 'Raleway', sans-serif;
+
+}
+
+html {
+   font-size: 10px;
+   scroll-behavior: smooth
+}
+
+.wrapper {
+   position: relative;
+   margin: 0 auto;
+}
+
+.burger {
+   position: absolute;
+   top: 25px;
+   right: 25px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   margin: 15px;
+   cursor: pointer;
+
+   @include mq(medium) {
+      display: none;
+   }
+}
+
+.burger>div {
+   width: 40px;
+   height: 3px;
+   background-color: #fff;
+   margin: 5px 0px;
+}
+
+::-webkit-scrollbar {
+   width: 10px;
+
+   @include mq(medium) {
+      width: 9px;
+   }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: rgb(196, 196, 196);
+   border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: rgb(160, 160, 160);
+}
